@@ -2,7 +2,7 @@ In the project directory, you can run:
 
 FOR WINDOWS
 
-### `npm run postinstall`
+### `npm install`
 
 and then 
 
