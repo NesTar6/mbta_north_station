@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "(cd api && npm install) && (cd ../client && npm install)",
     "client": "cd client && npm start",
     "server": "cd api && npm start",
-    "test" : "cd client && npm test",
+    "test": "cd client && npm test",
     "start": "concurrently \"npm run server\" \"npm run client\" \"npm run test\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^6.2.1"
+    "concurrently": "^6.2.1",
+    "postinstall": "^0.7.3"
   }
 }
